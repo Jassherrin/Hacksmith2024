@@ -24,7 +24,7 @@ To run the project on your machine:
 
 1. **Clone the repository**:  
    ```bash
-   git clone https://github.com/your-username/whatsapp-phishing-detector.git
+   git clone [https://github.com/your-username/whatsapp-phishing-detector.git](https://github.com/Jassherrin/Hacksmith2024.git)
    cd whatsapp-phishing-detector
    ```
 
