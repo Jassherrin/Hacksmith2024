@@ -9,7 +9,7 @@ PHISHING_KEYWORDS = [
 ]
 
 # VirusTotal API key (replace 'YOUR_API_KEY' with your VirusTotal API key)
-VIRUSTOTAL_API_KEY = "5b89e7cd102bda5e834c6816cd892b996d2df3f9336479acccab458950e542b5" #YOUR_API_KEY_HERE
+VIRUSTOTAL_API_KEY = "YOUR_API_KEY_HERE" 
 
 VIRUSTOTAL_URL_SCAN = "https://www.virustotal.com/api/v3/urls"
 VIRUSTOTAL_URL_REPORT = "https://www.virustotal.com/api/v3/analyses/{}"
