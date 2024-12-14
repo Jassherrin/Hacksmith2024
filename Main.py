@@ -1,5 +1,5 @@
 import re
-import requests # type: ignore
+import requests
 
 # Common phishing keywords
 PHISHING_KEYWORDS = [
