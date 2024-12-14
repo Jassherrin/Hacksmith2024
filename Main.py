@@ -1,5 +1,5 @@
 import re
-#import requests
+import requests # type: ignore
 
 # Common phishing keywords
 PHISHING_KEYWORDS = [
@@ -36,6 +36,11 @@ def analyze_message(message):
     # Extract links using regex
     links = re.findall(r'(https?://\S+)', message)
 
+    # Initialize flags to avoid reference errors
+    keyword_flag = False
+    short_link_flag = False
+    broken_link_flag = False
+
     # Step 1: Check keywords
     keyword_flag, keyword_message = check_keywords(message)
     print(keyword_message)
@@ -58,13 +63,8 @@ def analyze_message(message):
     else:
         print("\n✅ Message appears safe.")
 
+
 # Input a WhatsApp message
 message = input("Paste the WhatsApp message here: ")
 analyze_message(message)
 
-phishing = "false"
-if phishing == "false":
-    print("No worries!")
-
-else:
-    print("We have a problem!")
